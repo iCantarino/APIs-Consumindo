@@ -1,0 +1,135 @@
+
+/*
+TBD
+*/
+
+@font-face {
+    font-family: 'FSEX300';
+    src: url('../fonts/FSEX300.ttf');
+}
+
+
+/* Padronização */
+
+:root {
+    --primary-color:#5b8c7c;
+    --primary-lighter:#f2fff2;
+    --secondary-color:#606060;
+    --tertiary-color:#453c5c;
+
+    --white-color:#ffffff;
+    --dark-color:#111113;
+    --border-color:#C0C0C0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-shadow:0 0 2px #168514, 0 0 16px #168514;
+}
+
+body {
+    font-family: 'FSEX300';
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: var(--dark-color);
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'FSEX300';
+    text-shadow: 0 0 2px #168514, 0 0 16px #168514;
+}
+
+pre {
+    font-weight: bolder;
+}
+
+
+/* Reutilizar */
+
+.h_line {
+    width: 100%;
+    height: 2px;
+    background: var(--border-color);
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.centralizar {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.flex-content {
+    display: grid;
+    justify-content: space-around;
+}
+
+.scanlines {
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    height: 100%; 
+    width: 100%; 
+    pointer-events: none; 
+    z-index: 10000; 
+    background-repeat: repeat; 
+    background-image: url(../img/download.png); 
+    background-position: 40px 4px;
+}
+
+
+/* Home */
+
+    /** Banner **/
+
+.placeh-banner {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    border: 3px solid var(--border-color);
+    padding: 20px;
+}
+
+.textplaceh {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.asciicenter {
+    text-align: center;
+}
+
+    /** Conteúdo **/
+
+.home-button {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 2px #168514, 0 0 16px #168514;
+    padding: 40px;
+    margin: 20px;
+}
+
+.home-button, a {
+    text-transform: uppercase;
+    
+}
+
+label {
+    margin: 20px;
+}
+
+input {
+    margin: 15px;
+    margin-left: 15px;
+}        
