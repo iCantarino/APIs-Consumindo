@@ -6,32 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-CEP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/redo.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/file-document.css' rel='stylesheet'>
 </head>
 <body>
-    <h1 class="centralizar">Cadastro de Usuário</h1>
+
+    
+    <div class="top">
+        <div id="btn-return">
+            <button type="button" onclick="window.location.href='index.html'"><i class="gg-arrow-left"></i></button>
+        </div>
+        <div id="btn-refresh">
+            <button type="button" onclick="window.location.reload()"><i class="gg-redo"></i></button>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="texto-topo texto-centro">
+            <h1>BUSCA CEP</h1>
+        </div>    
+        <div class="h_line"></div>
+    </div>
+
         <div class="centralizar">    
             <div class="flex-content">
-                <fieldset>
-                    <label for="cep">CEP:</label>
+                <div class="formCep">
+                    <label for="cep">CEP</label>
                     <input type="text" id="cep" autocomplete="off">
-                    <br>
-                    <label for="rua">Rua:</label>
+                    <label for="rua">Rua</label>
                     <input type="text" id="rua" readonly>
-                    <br>
                     <label for="bairro">Bairro</label>
                     <input type="text" id="bairro" readonly>
-                    <br>
-                    <label for="cidade">Cidade:</label>
+                    <label for="cidade">Cidade</label>
                     <input type="text" id="cidade" readonly>
-                    <br>
-                    <label for="estado">Estado:</label>
+                    <label for="estado">Estado</label>
                     <input type="text" id="estado" readonly>
-                </fieldset>
+                </div>
             </div>
         </div>
-    <div class="centralizar flex-content">
-        <button><a href="index.html">Voltar</a></button>
-    </div>
+    <div class="scanlines"></div>
 </body>
 <script>
     //preencher os inputs com arrow functions

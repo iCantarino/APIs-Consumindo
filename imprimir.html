@@ -19,9 +19,6 @@
         <div id="btn-refresh">
             <button type="button" onclick="window.location.reload()"><i class="gg-redo"></i></button>
         </div>
-        <!-- <div id="btn-darkmode">
-            <button type="button" onclick="modoEscuro()"><i class="gg-moon"></i></button>
-        </div> -->
     </div>
 
     <div class="container">
@@ -52,11 +49,6 @@
 </body>
 <script>
     var dataAdded = false;
-
-function modoEscuro() {
-    var elementBody = document.body;
-    elementBody.classList.toggle('dark-mode');
-}
 
 function doPrint() {
     var imprimirDiv = document.getElementById('imprimirContent').innerHTML;

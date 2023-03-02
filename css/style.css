@@ -64,6 +64,10 @@ pre {
     padding: 20px;
 }
 
+.texto-centro {
+    text-align: center;
+}
+
 .flex-content {
     display: grid;
     justify-content: space-around;
@@ -129,14 +133,14 @@ pre {
     
 }
 
-label {
+/* label {
     margin: 20px;
 }
 
 input {
     margin: 15px;
     margin-left: 15px;
-}
+} */
 
 
 /* Imprimir */
@@ -293,4 +297,53 @@ input {
 .gg-arrow-left {
     margin-left: 15px;
     color: white;
+}
+
+/* CEP */
+
+    /** Topo **/
+
+.texto-topo {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+
+    /** Conteúdo **/
+
+.formCep {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formCep input {
+    text-align: center;
+    font-family: 'FSEX300';
+    width: 200%;
+    border: 0;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 15px;
+    outline: 0;
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.formCep label {
+    display: flex;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
