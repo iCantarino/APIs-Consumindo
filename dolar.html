@@ -7,15 +7,46 @@
     <meta http-equiv="refresh" content="30" />
     <title>API-Dolar</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/redo.css' rel='stylesheet'>
 </head>
 <body>
-   <div>
-        <input type="text" id="dolar" readonly>
-   </div>
-   <div id="moeda" class>
-        <input type="text" readonly>
-   </div>
-   <button><a href="index.html">Voltar</a></button>
+
+
+     <div class="top">
+          <div id="btn-return">
+               <button type="button" onclick="window.location.href='index.html'"><i class="gg-arrow-left"></i></button>
+          </div>
+          <div id="btn-refresh">
+               <button type="button" onclick="window.location.reload()"><i class="gg-redo"></i></button>
+          </div>
+     </div>
+
+     <div class="header">
+          <div class="texto-topo texto-centro">
+               <h1>Conversão de Moedas</h1>
+          </div>    
+          <div class="h_line"></div>
+     </div>
+     
+     <div class="container centralizar">
+          <div class="conversor">
+               <div class="flex-content ">
+                    <label for="moedaUm" id="moedaUm">Moeda Um</label>
+                    <input type="text" id="idMoeda" placeholder="Pesquise por uma moeda">
+                    <input type="text" id="valueMoeda1" placeholder="Valor aqui" readonly>
+               </div>
+               <div class="flex-content">
+                    <label for="moedaDois" id="moedaDois">Moeda Dois</label>
+                    <input type="text" id="idMoeda2" placeholder="Pesquise por uma moeda">
+                    <input type="text" id="valueMoeda2" placeholder="Valor aqui" readonly>
+               </div>
+          </div>
+     </div>
+     <div class="container centralizar">
+          <div id="output"></div>
+     </div>
+     <div class="scanlines"></div>
 </body>
-<script src="js/script.js"></script>
+<script src="js/dolar.js"></script>
 </html>
