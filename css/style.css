@@ -82,6 +82,10 @@ pre {
     background-position: 40px 4px;
 }
 
+.container {
+    margin-top: 4%;
+ }
+
 
 /* Home */
 
@@ -132,4 +136,161 @@ label {
 input {
     margin: 15px;
     margin-left: 15px;
-}        
+}
+
+
+/* Imprimir */
+
+    /** Topo **/
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+#btn-refresh button {
+    background-color: #4c5eaf;
+    border: none;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#btn-return button {
+    background-color: #27343a;
+    margin-left: 15px;
+    border: none;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+}
+
+
+    /** Conteúdo **/
+
+
+.formulario {
+    border: 2px solid gray;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 25px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input {
+    /* background-color: inherit;
+    color: inherit; */
+    color: var(--primary-color);
+    font-family: 'FSEX300';
+    text-transform: none;
+    text-align: center;
+    width: 40%;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding: 5px;
+    font-size: small;
+    font-weight: lighter;
+    border: none;
+    border-bottom: 2px solid green;
+}
+
+.formulario input:placeholder-shown {
+    font-family: 'FSEX300';
+    font-style: italic;
+ }
+ 
+
+.formulario button {
+    font-family: 'FSEX300';
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: inherit;
+    margin-top: 20px;
+    border: 2px solid #4c5eaf; /* Green */
+    color: inherit;
+    padding: 20px;
+    text-decoration: none;;
+    font-size: 16px;
+}
+
+.btn-form {
+    text-align: center;
+    margin: 8px auto 8px auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    /** Footer **/
+
+#impressaoGerar {
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#button-print{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.btn-print {
+    text-align: center;
+    background-color: #4c5eaf;
+    border: none;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+    /** Icons **/
+
+.gg-redo {
+    margin-left: 15px;
+    color: white;
+}
+
+.gg-file-document {
+    margin-top: 20px;
+    margin-left: 21px;
+    color: white;
+}
+
+.gg-arrow-left {
+    margin-left: 15px;
+    color: white;
+}
