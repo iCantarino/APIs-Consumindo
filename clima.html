@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30" />
+    <title>API-Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/redo.css' rel='stylesheet'>
+</head>
+<body>
+
+
+    <div class="top">
+        <div id="btn-return">
+            <button type="button" onclick="window.location.href='index.html'"><i class="gg-arrow-left"></i></button>
+        </div>
+        <div id="btn-refresh">
+            <button type="button" onclick="window.location.reload()"><i class="gg-redo"></i></button>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="texto-topo texto-centro">
+            <h1>Temperatura e Clima</h1>
+        </div>    
+        <div class="h_line"></div>
+    </div>
+
+    <div class="container centralizar">
+        <div class="box-clima">
+            <div class="flex-content">
+            <input type="text" id="pesquisarCidade" placeholder="Cidade...">
+            <button onclick="gerarClima()">Pesquisar</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="container centralizar">
+        <div class="box-result flex-content">
+            <div class="box-clima flex-content">
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scanlines"></div>
+</body>
+<script src="js/clima.js"></script>
+</html>

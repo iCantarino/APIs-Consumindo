@@ -168,6 +168,7 @@ input {
 }
 
 #btn-refresh button {
+    margin-top: 15px;
     background-color: #4c5eaf;
     border: none;
     padding: 5px;
@@ -182,6 +183,7 @@ input {
 }
 
 #btn-return button {
+    margin-top: 15px;
     background-color: #27343a;
     margin-left: 15px;
     border: none;
@@ -391,3 +393,45 @@ input {
     margin-bottom: 25px;
 }
 
+/* Clima */
+    
+    /** Conteúdo **/
+
+.box-clima {
+    border: 2px solid var(--border-color);
+    padding: 10%;
+    width: 100%;
+}
+
+.box-clima input {
+    font-family: 'FSEX300';
+    text-align: center;
+    padding: 15px;
+    width: 50%;
+    font-family: 'FSEX300';
+    margin-bottom: 25px;
+}
+
+.box-clima button {
+    font-family: 'FSEX300';
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: inherit;
+    margin-top: 20px;
+    border: 2px solid #4c5eaf; /* Green */
+    color: inherit;
+    padding: 20px;
+    text-decoration: none;;
+    font-size: 16px;
+}
+
+.box-clima .flex-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
