@@ -314,6 +314,11 @@ input {
     color: white;
 }
 
+.gg-dollar {
+    margin-left: 23px;
+    color: white;
+}
+
 /* CEP */
 
 
@@ -367,8 +372,19 @@ input {
 }
 
 .conversor input {
+    font-family: 'FSEX300';
     text-align: center;
-    width: 100%;
+    padding: 15px;
+    font-family: 'FSEX300';
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+
+.conversor select {
+    font-family: 'FSEX300';
+    text-align: center;
+    width: 250px;
     padding: 15px;
     font-family: 'FSEX300';
     margin-right: 50px;

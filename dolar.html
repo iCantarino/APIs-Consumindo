@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/redo.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dollar.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -33,18 +34,29 @@
           <div class="conversor">
                <div class="flex-content ">
                     <label for="moedaUm" id="moedaUm">Moeda Um</label>
-                    <input type="text" id="idMoeda" placeholder="Pesquise por uma moeda">
-                    <input type="text" id="valueMoeda1" placeholder="Valor aqui" readonly>
+                    <select name="idMoeda" id="idMoeda">
+                         <option value="USD">USD</option>
+                         <option value="EUR">EUR</option>
+                         <option value="BRL">BRL</option>
+                    </select>
+                    <input type="number" id="valueMoeda1" placeholder="Valor aqui">
                </div>
                <div class="flex-content">
                     <label for="moedaDois" id="moedaDois">Moeda Dois</label>
-                    <input type="text" id="idMoeda2" placeholder="Pesquise por uma moeda">
-                    <input type="text" id="valueMoeda2" placeholder="Valor aqui" readonly>
+                    <select name="idMoeda2" id="idMoeda2">
+                         <option value="USD">USD</option>
+                         <option value="EUR">EUR</option>
+                         <option value="BRL">BRL</option>
+                    </select>
+               </div>
+               <div class="flex-content">
+                    <button class="btn-print" onclick="conversor()"><i class="gg-dollar"></i></button>
                </div>
           </div>
      </div>
      <div class="container centralizar">
-          <div id="output"></div>
+          <div id="output"></div><br><br>
+          <div id="outputContent"></div>
      </div>
      <div class="scanlines"></div>
 </body>
