@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Aware';
+    src: url('../fonts/AwareBold-qZo3x.ttf');
+}
+
+
+#btn-return button {
+    background-color: #3f7541;
+    color: white;
+    border: none;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.gg-arrow-left {
+    margin-left: 13px;
+}
+.gg-redo {
+    margin-left: 15px;
+    color: white;
+}
+
+
+#btn-return button:hover {background-color: #3e8e41}
+
+#btn-return button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#btn-refresh button {
+    margin-top: 15px;
+    background-color: #4c5eaf;
+    border: none;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+#intro {
+    text-align: center;
+}
+
+#intro, h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Aware';
+    font-weight: bolder;
+    font-size: 46px;
+    color: red;
+}
+
+body {
+    background-image: url('../imgs/study-girl-2.jpg');
+    background-size: cover;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 13px;
+    background-repeat: no-repeat;
+    padding-left: 42px;
+}
+
+#researchOutput {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 20%;
+    margin-left: 40%;
+    padding: 10px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border-radius: 20px;
+    
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.songlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+/* 
+.boxcard-base {
+    background-color: grey;
+    width: 875px;
+    height: 600px;
+}
+/* 
+.boxcard-content {
+    
+} */ 

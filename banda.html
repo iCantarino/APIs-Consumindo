@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Banda</title>
+    <link rel="stylesheet" href="css/banda.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/redo.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div id="btn-return">
+        <button type="button" onclick="window.location.href='index.html'"><i class="gg-arrow-left"></i></button>
+    </div>
+    <div id="btn-refresh">
+        <button type="button" onclick="window.location.reload()"><i class="gg-redo"></i></button>
+    </div>
+    <div id="intro">
+        <h1>ArtistFinder</h1>
+
+        <input type="text" id="researcher" placeholder="Procure por sua banda...">
+        <button type="button" onclick="researchFunction()">Pesquisar</button>
+    </div>
+    <div id="div1">
+        <div id="researchOutput"><p></p></div>
+    </div>
+
+    <script src="js/banda.js"></script>
+</body>
+</html>

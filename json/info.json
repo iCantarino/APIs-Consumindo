@@ -1,0 +1,19 @@
+{
+    "bandas": [
+        {
+            "nome": "NIRVANA",
+            "genero": "GRUNGE",
+            "integrantes": "KURT COBAIN"
+        },
+        {
+            "nome": "LINKIN PARK",
+            "genero": "NU METAL",
+            "integrantes": "CHESTER BENNINGTON"
+        },
+        {
+            "nome": "TAME IMPALA",
+            "genero": "ROCK PSICODÉLICO",
+            "integrantes": "KEVIN PARKER"
+        }
+    ]
+}

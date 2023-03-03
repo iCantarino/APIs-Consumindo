@@ -148,6 +148,13 @@ pre {
     
 }
 
+.flex-content-home {
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
 /* label {
     margin: 20px;
 }
@@ -406,7 +413,7 @@ input {
 .box-clima input {
     font-family: 'FSEX300';
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     width: 50%;
     font-family: 'FSEX300';
     margin-bottom: 25px;
